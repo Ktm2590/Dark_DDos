@@ -1,12 +1,16 @@
-import sys, os, telebot
-from threading import Timer
-import re
-from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
-from core.colors import *
-from core.setting import *
-from core.banner import *
-from start import *
-from core import update
+try:
+	import sys, os, telebot
+	from threading import Timer
+	import re
+	from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+	from core.colors import *
+	from core.setting import *
+	from core.banner import *
+	from start import *
+	from core import update
+except:
+	print(R+"Run: python3 setup.py install"+W)
+	quit()
 os.system('figlet Dark_DDos')
 print('')
 print(banner)
