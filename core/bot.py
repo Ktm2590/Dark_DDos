@@ -47,7 +47,7 @@ def send_text(message):
 	elif message.text.lower() == 'разработчик':
 		if message.chat.type == 'private':
 			if str(message.from_user.id) == str(id):
-				bot.send_message(message.chat.id, '\nРазработчик DarkGamer\n\nРепозиторий https://github.com/DarkGa/Dark_DDos\n\nВерсия 1.0\n')
+				bot.send_message(message.chat.id, '\nРазработчик DarkGamer\n\nРепозиторий https://github.com/DarkGa/Dark_DDos\n\nВерсия 1.2\n')
 			else:
 				bot.send_message(message.chat.id, 'Твой бот? Нет? Так иди нахуй!')
 	elif '/port' in message.text.lower():
